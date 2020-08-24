@@ -168,11 +168,13 @@ hr{
 */
 
 .contact-text {
-  padding-top: 50px;
+
 }
 
 .contact-thumbnail {
-  border-radius: 250px;
+  border-radius: 125px;
+  height: 250px;
+  width: auto;
 }
 
 /* Featurettes
