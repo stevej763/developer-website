@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <title>Portfolio · Steve Jones</title>
+
+
+  <link rel="shortcut icon" href="favicon.png">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="jquery_functions.js"></script>
   <!-- bootstrap css -->
@@ -17,82 +21,164 @@
 </head>
 
 <body class="Portfolio">
-
-  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom ">
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom">
     <h5 class="my-0 mr-md-auto font-weight-normal">Steve Jones · Portfolio</h5> <!-- navbar heading -->
     <nav class="my-2 my-md-0 mr-md-3">
       <!-- classes for margins -->
-      <a class="p-2 text-dark" href="#projects">Projects</a>
-      <a class="p-2 text-dark" href="#about">About</a>
-      <a class="p-2 text-dark" href="#contact">Contact</a>
+      <a class="section-link p-2 text-dark" href="#projects">Projects</a>
+      <a class="section-link p-2 text-dark" href="#about">About</a>
+      <a class="section-link p-2 text-dark" href="#contact">Contact</a>
     </nav>
   </div>
-
-  <!-- introduction  -->
+  <div class="main bg-light">
+    <!-- introduction  -->
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-  <div class="col-md-5 p-lg-5 mx-auto">
-    <h1 class="display-4 font-weight-normal">Steve Jones</h1>
-    <p class="lead font-weight-normal">Software Developer</p>
-    <p class=" font-weight-normal">I am a self-taught Software Developer. I am currently developing my skills in Swift/iOS, Javascript, NodeJS and C#/.Net. Take a look below to see some of my recent projects</p>
+      <div class="col-md-8 p-lg-8 mx-auto">
+        <img class="img-fluid header-image" src="hello.png" alt="">
+        <h1 class="display-4 font-weight-normal">Steve Jones</h1>
+        <p class="lead font-weight-normal">Software Developer</p>
+        <p class=" font-weight-normal">I am a self-taught Software Developer. Currently growing my skills in Swift/iOS, Javascript, NodeJS and C#/.Net. Take a look about me and some of my recent projects below.</p>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div> <!-- end of introduction -->
+
+    <hr class="spacer">
+
+
+
+
+
+    <!-- projects -->
+    <div class="container" id="projects">
+      <h2 class="heading text-center">Projects</h2>
+
+      <!-- project 1 -->
+      <div class="row project">
+        <div class="col-md-6 text-center">
+          <h2 class="featurette-heading">DevTools.com</h2>
+          <h2 class="text-muted">Your GO-TO dev resource site</h2>
+          <br>
+          <p class="lead">My latest project which I am still working on. Built for my own benefit and hopefully others. </p>
+          <p class="lead">DevTools.com contains information and links to my favourite developer resources for quick access. As well as links to useful
+            tutorials I have used and books I have read.</p>
+          <ul>
+            <li class="lead">Written in HTML, CSS, Javascript, jQuery</li>
+            <li class="lead">Bootstrap framework for styling</li>
+            <li class="lead">Responsive design to ensure the best experience on both mobile and PC</li>
+          </ul>
+          <div class="container text-center">
+            <a href="https://github.com/stevej763/dev-tools-site" class="btn btn-secondary" target="_blank">Source</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+
+          <img class="featurette-image img-fluid mx-auto" src="images/devtools.jpg" width="500" height="500" alt="">
+        </div>
+      </div>
+
+      <!-- project 2 -->
+      <div class="row project">
+        <div class="col-md-6 order-md-2 text-center">
+          <h2 class="featurette-heading">Newsletter Web App.</h2>
+          <h2 class="text-muted">Building an Audience</h2>
+          <p class="lead">A simple sign-up form for a mailing list, built using a NodeJS backend and the Mailchimp API. A simple, but highly useful application. View the project using one of the links below:</p>
+          <a href="https://github.com/stevej763/mailing-list-nodejs" class="btn btn-secondary" target="_blank">Source</a>
+          <a href="https://mail-listing-app.herokuapp.com/" class="btn btn-secondary" target="_blank">Live Example</a><br><br>
+        </div>
+        <div class="col-md-6">
+          <img class="featurette-image img-fluid mx-auto" src="images/mail-app-nodejs.jpg" width="500" height="500" alt="">
+        </div>
+      </div>
+
+      <!-- project 3 -->
+      <div class="row project">
+        <div class="col-md-6 text-center">
+          <h2 class="featurette-heading">Fitness Data App</h2>
+          <h2 class="text-muted">Calculate BMI, BMR and TDEE</h2>
+          <p class="lead">A fitness app allowing users to calculate a number of metrics in order to help them lead a more healthy lifestyle.</p>
+          <ul>
+            <li>All code written in Swift</li>
+            <li>Follows a MVC design pattern</li>
+            <li>Desgined using storyboard, Auto-layout, UI Kit and some programatic UI</li>
+          </ul>
+          <a class="btn btn-secondary" href="https://active-travel.co.uk/" target="_blank">Website</a><br><br>
+        </div>
+        <div class="col-md-6 text-center">
+          <div id="app-carousel" class="carousel slide" data-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block carousel-image" src="images/fitness-app/BMI-info.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block carousel-image"src="images/fitness-app/BMI.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block carousel-image"src="images/fitness-app/TDEE.jpg" alt="Third slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block carousel-image" src="images/fitness-app/TDEE-info.jpg" alt="Forth slide">
+              </div>
+            </div>
+            <a id="c-slider" class="carousel-control-prev" href="#app-carousel" role="button" data-slide="prev">
+              <span id="c-slider" class="cc-slider carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a id="c-slider" class="carousel-control-next" href="#app-carousel" role="button" data-slide="next">
+              <span id="c-slider" class="cc-slider carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+    </div> <!-- end of projects section -->
+
+    <hr class="spacer">
+
+    <div class="container" id="about">
+      <!-- about me -->
+      <h2 class="heading text-center">About</h2>
+      <div class="row">
+        <div class="col-md-6 skills-list">
+          <p class="lead list-header">Skills</p>
+          <p>On my coding journey I have developed a number of key skills, highlighted below:</p>
+          <ul>
+            <li>Skilled in various IDEs including Xcode and Atom</li>
+            <li>Proficient writing in Swift</li>
+            <li>Experience working with a variety of REST APIs</li>
+            <li>Comfortable making use of various frameworks including Firebase, realm, Express and Bootstrap</li>
+            <li>Utilise source control on all projects through Github - made open-source and can be viewed by all</li>
+          </ul>
+        </div>
+        <div class="col-md-6 interests-list">
+          <p class="lead list-header">Interests</p>
+          <p>Outside of writing code and building applications I have a number of other interests:</p>
+          <ul>
+            <li>Fitness - Running 5k, 10k and Half-Marathons</li>
+            <li>Photography - see my photography portfolio here: <a target="_blank" href="https://active-travel.co.uk/">active-travel.co.uk</a></li>
+            <li>Hiking - Highlights include Angels Landing in Zion National Park and Half-Dome in Yosemite National Park</li>
+            <li>Music - I enjoy a wide range of music from The Lumineers to Nightwish and play the guitar (poorly)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <hr class="spacer">
+
+    <div class="container" id="contact">
+      <!-- contact -->
+      <h2 class="heading text-center">Contact</h2>
+
+    </div>
   </div>
-  <div class="product-device shadow-sm d-none d-md-block"></div>
-  <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-</div>
 
 
 
 
 
 
-  <div class="container" id="projects">
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="featurette-heading">Newsletter Web App. <span class="text-muted">Building an Audience</span></h2>
-        <p class="lead">A simple sign-up form for a mailing list, built using a NodeJS backend and the Mailchimp API. A simple, but highly useful application. View the project using one of the links below:</p>
-        <a href="https://github.com/stevej763/mailing-list-nodejs" class="btn btn-secondary" target="_blank">Source</a>
-        <a href="https://mail-listing-app.herokuapp.com/" class="btn btn-secondary" target="_blank">Live Example</a><br><br>
-      </div>
-      <div class="col-md-6">
-        <img class="featurette-image img-fluid mx-auto" src="images/projects/newsletter/nl-thumb.jpg" width="500" height="500" alt="">
-      </div>
-    </div>
-    <hr class="featurette-divider">
-    <div class="row">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">TinDog. <span class="text-muted">Tinder for your dog!</span></h2>
-        <p class="lead">A mockup website for everybody's favourite dog dating app TinDog. Built to demonstrate designing an app using Bootstrap.</p>
-        <a href="https://github.com/stevej763/tindog" class="btn btn-secondary" target=" _blank">Source</a>
-      </div>
-      <div class="col-md-5 order-md-1">
-        <img class="featurette-image img-fluid mx-auto" src="images/projects/tindog/tindog-thumbnail.jpg" width="500" height="500" alt="">
-      </div>
-    </div>
-    <hr class="featurette-divider">
-    <div class="row">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Active Travel. <span class="text-muted">A Wordpress Photography Portfolio</span></h2>
-        <p class="lead">This is my own photography portfolio site. Built uisng the Twenty Seventeen Wordpress theme and Gutenberg blocks. Take a look:</p>
-        <a class="btn btn-secondary" href="https://active-travel.co.uk/" target="_blank">Website</a><br><br>
-      </div>
-      <div class="col-md-5">
-        <img class="featurette-image img-fluid mx-auto" src="images/projects/active-travel/Active-travel.jpg" width="500" height="500">
-      </div>
-    </div>
-    <hr class="featurette-divider">
-  </div>
 
-<div class="container" id="about"> <!-- about me -->
-<h1>about</h1>
-<ul>
-  <li>skills and interests</li>
-</ul>
-
-</div>
-
-<div class="container" id="contact"> <!-- contact -->
-<h1>contact</h1>
-
-</div>
 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
