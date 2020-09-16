@@ -88,11 +88,12 @@ ul li::before {
 
 
 .carousel-item {
-  padding: 7% 15%;
+  /* padding: 7% 15%; */
 }
 
 .carousel-image {
-  width: 50%;
+  width: 100%;
+  height: inherit;
   margin: 20px;
 }
 .carousel-inner img {
@@ -101,4 +102,8 @@ ul li::before {
 
 .cc-slider{
   background-color: #f39c12;
+}
+
+#about{
+  text-align: left;
 }
