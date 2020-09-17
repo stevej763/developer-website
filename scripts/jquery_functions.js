@@ -12,3 +12,11 @@ $(document).on('click', 'a[href^="#"]', function(event) {
 
 
 });
+
+//image pop
+$(function() {
+		$('.pop').on('click', function() {
+			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
+			$('#imagemodal').modal('show');
+		});
+});

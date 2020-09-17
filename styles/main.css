@@ -113,3 +113,10 @@ ul li::before {
 #about{
   text-align: left;
 }
+.footer-spacer{
+  padding-bottom: 100px;
+  border-width: 0;
+}
+.contact-icons{
+  padding: 10px;
+}
