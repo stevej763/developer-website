@@ -5,6 +5,7 @@
 body{
   text-align: center;
 }
+
 .Portfolio {
   padding-left: 15%;
   padding-right: 15%;
@@ -44,7 +45,7 @@ margin-top: 150px;
 
 
 .heading {
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-bottom: 3rem;
   text-decoration: underline;
   text-decoration-color: #f39c12;
