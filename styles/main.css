@@ -11,6 +11,10 @@ body{
 
 }
 
+.info-col {
+  padding-bottom: 10px;
+}
+
 .border-bottom{
   background-color: #f39c12;
 }
@@ -68,9 +72,14 @@ margin-top: 100px;
 
 }
 
-.interests-list a{
-  color: #2ECC71
+.carousel-control-prev-icon {
+  filter: invert(100%);
+   }
+
+.carousel-control-next-icon {
+  filter: invert(100%);
 }
+
 
 
 ul {
@@ -100,9 +109,6 @@ ul li::before {
   margin: auto;
 }
 
-.cc-slider{
-  background-color: #f39c12;
-}
 
 #about{
   text-align: left;
